@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="overflow-x-hidden scroll-smooth">
+
+    <!-- Header Section -->
+  <header class="bg-gray-950 py-6 rel">
+    <div class="container flex justify-between items-center">
+        
+        <!-- Logo -->
+        <div class="flex pl-6 lg:pl-0 text-gray-400 duration-500">
+            <a href="#"><i class="fa-solid fa-leaf py-2 pr-2"></i></a> 
+            <h2 class="text-2xl"><a href="#">Logo</a></h2>
+        </div>
+
+        <div id="dropdown-button" class="block md:hidden">
+          <div class="space-y-1 cursor-pointer pr-7">
+            <div class="bg-gray-50 w-8 h-1 rounded-full"></div>
+            <div class="bg-gray-50 w-8 h-1 rounded-full"></div>
+            <div class="bg-gray-50 w-8 h-1 rounded-full"></div>
+          </div>
+        </div>
+
+        <!-- Menu -->
+
+        <ul class="hidden tracking-tighter md:flex text-gray-50 duration-500 space-x-4 lg:space-x-8">
+            <li class="font-cormo text-lg py-2 hover:opacity-75 duration-500"><a href="#">Home</a></li>
+            <li class="font-cormo text-lg py-2 hover:opacity-75 duration-500 scroll-smooth"><a href="#information" class="scroll-smooth transition-all duration-500 ease-in-out">About us</a></li>
+            <li class="font-cormo text-lg py-2 hover:opacity-75 duration-500"><a href="#blog">Blog</a></li>
+            <li class="font-cormo text-lg py-2 hover:opacity-75 duration-500"><a href="#footer">Contact</a></li>
+        </ul>
+
+
+        <!-- Shop Button -->
+        <button type="button" class="button">Shop now</button>
+    </div>
+  </header>
+  <!-- Dropdown Menu -->
+  <div id="dropdown-menu" class="hidden lg:hidden w-1/2 md:w-1/4 h-fit absolute top-100 bg-gray-950 right-0 z-10">
+    <ul class="justify-center mb-4 md:mb-0 text-center tracking-tighter md:flex text-gray-50 duration-500 lg:space-x-8">
+      <li class="font-cormo text-lg py-2 hover:opacity-75 duration-500 hover:bg-gray-800"><a href="#" class="block">Home</a></li>
+      <li class="font-cormo text-lg py-2 hover:opacity-75 duration-500 hover:bg-gray-800"><a href="#information" class="block">About us</a></li>
+      <li class="font-cormo text-lg py-2 hover:opacity-75 duration-500 hover:bg-gray-800"><a href="#blog" class="block">Blog</a></li>
+      <li class="font-cormo text-lg py-2 hover:opacity-75 duration-500 hover:bg-gray-800"><a href="#footer" class="block">Contact</a></li>
+  </ul>
+  </div>
+  <!-- Purple Tree Main -->
+  <section class="relative h-[50rem] w-full group">
+    <!-- Image Container -->
+    <div class="absolute overflow-hidden h-full w-full">
+      <img src="images/purpletree.jpg" class="relative overflow-x-hidden h-full w-full object-cover" alt="">
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black via-[#4C24F2] opacity-80"></div>
+    </div>
+  
+    <!-- Text Container -->
+    <div class="container absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-wrap justify-between items-center">
+      <span class="font-cormo italic text-6xl lg:text-8xl text-[#6C158C] mx-4 my-2 lg:my-4">read</span>
+      <span class="font-cormo italic text-6xl lg:text-8xl text-[#6C158C] mx-4 my-2 lg:my-4">the<br>story</span>
+    </div>
+
+    <p class="bg-clip-text bg-gradient-to-r from-[#00FAEC]  to-[#DB54B7] absolute text-center text-transparent font-medium md:text-lg items-center justify-center w-80 md:w-96 bottom-1/4 transform -translate-y-1/4 -translate-x-1/2 left-1/2 border-b-2 border-[#577687] pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laborum neque quis? Sapiente, cupiditate modi.</p>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="py-24 flex bg-black text-gray-50">
+    <!-- Container -->
+    <div class="container px-10 lg:px-0">
+      <h2 class="pb-3 italic text-4xl text-[#6D9793]"><a href="#">Blogs</a></h2>
+     <!-- Grid Area -->
+     <div class="pt-4 grid grid-cols-2 gap-20 bg-black">
+        <!-- Tittle -->
+        <!-- Item 1 -->
+        <div class="group flex-wrap col-span-2 md:ml-15 md:mr-15 lg:ml-0 lg:mr-0 lg:col-span-1 flex flex-col">
+          <!-- Item 1 Header -->
+          <div class="flex flex-col flex-wrap items-start justify-start">
+              <img src="images/blacktree1.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500 cursor-pointer" alt="">
+              <h3 class="group-hover:text-yellow-700 duration-500 pt-7 italic font-thin text-normal md:text-xl">lorem ipsum</h3>
+          </div>
+          <!-- Footer -->
+          <p class="pt-2 text-sm md:text-normal group-hover:text-yellow-600 duration-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi debitis at libero dolor eos iusto itaque recusandae dolores nulla rem.</p>
+          <a href="#" class="button block w-fit mt-3 justify-center">Read now</a>
+        </div>
+        <div class="group md:ml-15 md:mr-15 lg:ml-0 lg:mr-0  col-span-2 lg:col-span-1 flex flex-col">
+          <!-- Item 1 Header -->
+          <div class="flex flex-col flex-wrap items-start justify-start">
+              <img src="images/blacktree2.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500 cursor-pointer" alt="">
+              <h3 class="group-hover:text-yellow-700 duration-500 pt-7 italic font-thin text-normal md:text-xl">lorem ipsum</h3>
+          </div>
+          <!-- Footer -->
+          <p class="pt-2 text-sm md:text-normal group-hover:text-yellow-600 duration-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi debitis at libero dolor eos iusto itaque recusandae dolores nulla rem.</p>
+          <a href="#" class="button block w-fit mt-3 justify-center text-center">Read now</a>
+        </div>
+        
+     </div>
+    </div>
+  </section>
+
+  <!-- Information Section -->
+
+  <section id="information" class="bg-black text-gray-50 pt-28">
+    <!-- Container -->
+    <div class="container px-10 lg:px-0">
+      <!-- Header Tittle -->
+      <h2 class="pb-3 italic text-4xl text-[#6D9793]"><a href="#">lorem ipsum...</a></h2>
+      <div class="pt-4 grid grid-cols-3 md:grid-cols-5 lg:grid-cols-3 gap-8 lg:gap-20 bg-black">
+        <!-- Item 1 -->
+        <div class="flex hover:scale-110 hover:border-[#6D9793] duration-500 md:columns-2 lg:w-full lg:col-start-auto md:col-start-2 col-span-3 lg:col-span-1 pb-20 lg:pb-10 lg:mt-20 flex-col flex-wrap border border-gray-300 rounded-3xl">
+          <!-- Header -->
+          <div class="pl-10 pt-10">
+            <i class="fas fa-home border text-gray-300 mb-7 text-sm border-gray-200 rounded-full p-1.5 bg-transparent"></i>
+            <h3>Lorem ipsum</h3>
+          </div>
+            
+            <p class="pl-10 pt-12 pr-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+        </div>
+        <!-- Item 2 -->
+        <div class="flex hover:scale-110 hover:border-[#6D9793] duration-500 md:columns-2 lg:w-full lg:col-start-auto md:col-start-2 col-span-3 lg:col-span-1 pb-20 lg:pb-10 lg:mb-20 flex-col flex-wrap border border-gray-300 rounded-3xl">
+          <!-- Header -->
+          <div class="pl-10 pt-10">
+            <i class="fas fa-star border text-gray-300 mb-7 text-sm border-gray-200 rounded-full p-1.5 bg-transparent"></i>
+            <h3>Lorem ipsum</h3>
+          </div>
+            
+            <p class="pl-10 pt-12 pr-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+        </div>
+        <!-- Item 1 -->
+        <div class="flex hover:scale-110 hover:border-[#6D9793] duration-500 md:columns-2 lg:w-full lg:col-start-auto md:col-start-2 col-span-3 lg:col-span-1 pb-20 lg:pb-10 lg:mt-20 flex-col flex-wrap border border-gray-300 rounded-3xl">
+          <!-- Header -->
+          <div class="pl-10 pt-10">
+            <i class="fas fa-comment border text-gray-300 mb-7 text-sm border-gray-200 rounded-full p-1.5 bg-transparent"></i>
+            <h3>Lorem ipsum</h3>
+          </div>
+            
+            <p class="pl-10 pt-12 pr-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+        </div>
+        <!-- Item 1 -->
+        <div class="flex hover:scale-110 hover:border-[#6D9793] duration-500 md:columns-2 lg:w-full lg:col-start-auto md:col-start-2 col-span-3 lg:col-span-1 pb-20 lg:pb-0 lg:mb-20 flex-col flex-wrap border border-gray-300 rounded-3xl">
+          <!-- Header -->
+          <div class="pl-10 pt-10">
+            <i class="fas fa-magnifying-glass border text-gray-300 mb-7 text-sm border-gray-200 rounded-full p-1.5 bg-transparent"></i>
+            <h3>Lorem ipsum</h3>
+          </div>
+            
+            <p class="pl-10 pt-12 pr-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+        </div>
+        <!-- Item 5 -->
+        <div class="flex hover:scale-110 hover:border-[#6D9793] duration-500 md:columns-2 lg:w-full lg:col-start-auto md:col-start-2 col-span-3 lg:col-span-1 pb-20 lg:pb-10 lg:-mt-20 lg:mb-40 flex-col flex-wrap border border-gray-300 rounded-3xl">
+          <!-- Header -->
+          <div class="pl-10 pt-10">
+            <i class="fas fa-heart border text-gray-300 mb-7 text-sm border-gray-200 rounded-full p-1.5 bg-transparent"></i>
+            <h3>Lorem ipsum</h3>
+          </div>
+          <p class="pl-10 pt-12 pr-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+        </div>
+        <!-- Item 1 -->
+        <div class="flex hover:scale-110 hover:border-[#6D9793] duration-500 md:columns-2 lg:w-full lg:col-start-auto md:col-start-2 col-span-3 lg:col-span-1 pb-20 lg:pb-0 mb-20 flex-col flex-wrap border border-gray-300 rounded-3xl">
+          <!-- Header -->
+          <div class="pl-10 pt-10">
+            <i class="fas fa-shopping-bag border text-gray-300 mb-7 text-sm border-gray-200 rounded-full p-1.5 bg-transparent"></i>
+            <h3>Lorem ipsum</h3>
+          </div>
+            
+            <p class="pl-10 pt-12 pr-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Offer Now Section -->
+  <section id="offerblokg" class="bg-black text-gray-50">
+    <!-- Container -->
+    <img src="images/backgroundlinear.png" alt="" class="border-none h-48 md:h-96 object-contain md:object-cover w-full">
+    <div class="container px-10 lg:px-0">
+      <!-- Header Tittle -->
+      
+      <h2 class="pb-3 italic text-4xl pt-3 text-[#6D9793]"><a href="#">lorem ipsum...</a></h2>
+        <!-- Grid Area -->
+        <div class="pt-4 flex flex-col bg-black">
+          <!-- Item 1 -->
+          <div class="flex flex-col md:flex-row md:pl-7 lg:pl-0">
+            <!-- Left Content -->
+            <img src="images/blacktree1.jpg" alt="" class="w-full md:w-1/2 h-full">
+            <!-- Right Content -->
+            <div class="flex flex-col w-fit md:w-full justify-center md:pl-15 pb-7 md:pb-8">
+              <h3 class="italic font-extralight pb-4 text-lg lg:text-2xl pt-4 md:pt-0">Lorem ipsum</h3>
+              <p class="text-sm lg:text-base pb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perspiciatis ut ab perferendis quis cupiditate non ipsum totam repudiandae aliquam optio et tenetur sunt fuga vel unde, dicta molestias assumenda earum harum repellendus in qui! Ipsam, illo? Optio soluta consequuntur mollitia enim quas dolorem dolore dolores nam, nulla, molestiae quod!</p>
+              <a href="#" class="button block w-fit mt-3 justify-center text-center">Offer now</a>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="flex flex-col md:flex-row pt-4 md:pr-7 lg:pr-0">
+            <!-- Left Content -->
+            <div class="flex flex-col w-fit md:w-full justify-center order-2 md:order-1 md:pr-15 pb-7 md:pb-0">
+              <h3 class="italic font-extralight pb-4 text-lg lg:text-2xl pt-4 md:pt-0">Lorem ipsum</h3>
+              <p class="text-sm lg:text-base pb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perspiciatis ut ab perferendis quis cupiditate non ipsum totam repudiandae aliquam optio et tenetur sunt fuga vel unde, dicta molestias assumenda earum harum repellendus in qui! Ipsam, illo? Optio soluta consequuntur mollitia enim quas dolorem dolore dolores nam, nulla, molestiae quod!</p>
+              <a href="#" class="button block w-fit mt-3 justify-center text-center">Offer now</a>
+            </div>
+            <!-- Right Content-->
+            <img src="images/blacktree1.jpg" alt="" class="md:w-1/2 md:pb-0 order-1 md:order-2 h-full">
+            
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Prices Section -->
+  <section id="prices" class="bg-black border-b border-b-gray-200 pb-24 text-gray-50 pt-28">
+    <!-- Container -->
+    <h3 class="text-7xl w-full bg-black overflow-hidden whitespace-nowrap text-[#6D9793]">DOLOR SIT AMET → LOREM IPSUM DOL LOREMS  Sa<br> <span class="stroke-tittle"> M IPSUM DOLOR SIT AMET → LOREM DOLOR SIT AMET</span></h3>
+    <div class="container px-10 lg:px-0">
+      <!-- Header Tittle -->
+      <h2 class="pb-10 italic text-4xl pt-24 text-[#6D9793]"><a href="#">Our Prices</a></h2>
+      <!-- Grid Area -->
+      <div class="grid grid-cols-3 gap-10">
+        <!-- Item 1 -->
+        <div class="flex hover:scale-105 duration-500 flex-col col-span-3 md:col-span-1 mb-4  text-center text-gray-50 items-center border rounded-3xl border-gray-300">
+            <h3 class="capitalize text-3xl pb-7 pt-7 border-b border-gray-300 w-full">Starter</h3>
+            <p class="text-4xl md:text-7xl leading-5 md:leading-10 pb-15 pt-15 border-b border-gray-300 w-full">$10 <br> <span class="text-gray-400 text-xs md:text-sm">PER MONTH</span> </p>
+            <!-- Footer -->
+            <div class="pt-7 text-sm md:text-base pb-7 border-b border-gray-300 w-full">
+              <p>Support <span class="text-gray-400">at our discord server</span></p>
+              <p>3 <span class="text-gray-400">users included</span></p>
+              <p>Detailed <span class="text-gray-400">documentation</span></p>
+              <p>In-depth <span class="text-gray-400">documentation</span></p>
+            </div>
+            <a href="#" class="button ml-7 w-1/2 lg:ml-0 max-w-xl flex pr-20 pl-20 mb-4 mt-3 justify-center">Offer now</a>
+        </div>
+        <!-- Item 2 -->
+        <div class="flex hover:scale-105 duration-500 flex-col col-span-3 md:col-span-1 border-t-8 border-t-[#86B9B4] border-b-8 border-b-[#86B9B4] text-center text-gray-50 items-center border rounded-3xl border-gray-300">
+          <h3 class="capitalize text-3xl pb-7 pt-7 border-b border-gray-300 w-full">Starter</h3>
+          <p class="text-5xl leading-3 md:text-7xl md:leading-10 pb-15 pt-15 border-b border-gray-300 w-full">$10 <br> <span class="text-gray-400 text-sm">PER MONTH</span> </p>
+          <!-- Footer -->
+          <div class="pt-7 text-sm md:text-base pb-7 border-b border-gray-300 w-full">
+            <p>Support <span class="text-gray-400">at our discord server</span></p>
+            <p>3 <span class="text-gray-400">users included</span></p>
+            <p>Detailed <span class="text-gray-400">documentation</span></p>
+            <p>In-depth <span class="text-gray-400">documentation</span></p>
+          </div>
+          <a href="#" class="button ml-7 w-1/2 lg:ml-0 flex pr-20 pl-20 mb-4 mt-3 justify-center text-center">Offer now</a>
+      </div>
+      <!-- Item 3 -->
+        <div class="flex hover:scale-105 duration-500 flex-col col-span-3 md:col-span-1 mb-4  text-center text-gray-50 items-center border rounded-3xl border-gray-300">
+          <h3 class="capitalize text-3xl pb-7 pt-7 border-b border-gray-300 w-full">Starter</h3>
+          <p class="text-4xl md:text-7xl leading-5 md:leading-10 pb-15 pt-15 border-b border-gray-300 w-full">$10 <br> <span class="text-gray-400 text-xs md:text-sm">PER MONTH</span> </p>
+          <!-- Footer -->
+          <div class="pt-7 text-sm md:text-base pb-7 border-b border-gray-300 w-full">
+            <p>Support <span class="text-gray-400">at our discord server</span></p>
+            <p>3 <span class="text-gray-400">users included</span></p>
+            <p>Detailed <span class="text-gray-400">documentation</span></p>
+            <p>In-depth <span class="text-gray-400">documentation</span></p>
+          </div>
+          <a href="#" class="button ml-7 w-1/2 lg:ml-0 max-w-xl flex pr-20 pl-20 mb-4 mt-3 justify-center">Offer now</a>
+      </div>
+      </div>
+  </section>
+
+  <!-- Footer Section -->
+
+  <footer id="footer" class="bg-black border-b-8 border-b-gray-950 text-gray-50 pt-12 pb-12">
+    <!-- Footer Container -->
+    <div class="container flex md:flex-row flex-col md:gap-15 lg:gap-20">
+      <!-- Left Content -->
+      <div class="lg:basis-1/4 mb-8">
+        <div class="flex md:pl-6 lg:pl-0 text-gray-400 duration-500 pb-7 items-center justify-center md:items-start md:justify-start">
+            <a href="#"><i class="fa-solid fa-leaf py-2 pr-2"></i></a> 
+            <h2 class="text-2xl"><a href="#">Logo</a></h2>
+          </div class="text-gray-400">
+          <p class="text-sm ml-4 mr-4 lg:ml-0 lg:mr-0 pb-6 text-gray-400 text-center md:text-start">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, libero. </p>
+          <div class="text-gray-400">
+            <ul class="flex items-center justify-center flex-row gap-3 md::gap-7 md:pl-7 md:justify-start">
+              <li class="border border-gray-200 rounded-full w-7 h-7 flex items-center justify-center"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li class="border border-gray-200 rounded-full w-7 h-7 flex items-center justify-center"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li class="border border-gray-200 rounded-full w-7 h-7 flex items-center justify-center"><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+              <li class="border border-gray-200 rounded-full w-7 h-7 flex items-center justify-center"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Company Content -->
+        <div class="pt-4 pb-4 lg:basis-1/4 items-center justify-center text-center md:items-start md:justify-start md:text-start">
+          <h3 class="pt-4 border-t-4 lg:w-1/2 border-t-[#6D9793]">Company</h3>
+          <ul class="text-xs text-gray-400 leading-2 pt-3">
+            <li class="pb-4"><a href="#">IMPRINT</a></li>
+            <li class="pb-4"><a href="#">CONTACH</a></li>
+            <li class="pb-4"><a href="#">PRICING</a></li>
+            <li class="pb-4"><a href="#">CAREERS</a></li>
+          </ul>
+        </div>
+        <!-- About Us Content -->
+        <div class="pt-4 pb-4 md:basis-1/4 items-center justify-center text-center md:items-start md:justify-start md:text-start">
+          <h3 class="pt-4  border-t-4 lg:w-1/2 border-t-[#6D9793]">ABOUT US</h3>
+          <ul class="text-xs text-gray-400 leading-2 pt-3">
+            <li class="pb-4"><a href="#">OUR TEAM</a></li>
+            <li class="pb-4"><a href="#">ABOUT</a></li>
+            <li class="pb-4"><a href="#">SUPPORT</a></li>
+            <li class="pb-4"><a href="#">MEDIA KIT</a></li>
+          </ul>
+        </div>
+        <!-- Blog Content -->
+        <div class="pt-4 md:pr-4 md:basis-1/4 items-center justify-center text-center md:items-start md:justify-start md:text-start">
+          <h3 class="pt-4  border-t-4 lg:w-1/2 border-t-[#6D9793]">BLOG</h3>
+          <ul class="text-xs text-gray-400 leading-2 pt-3">
+            <li class="pb-4"><a href="#">LATEST POSTS</a></li>
+            <li class="pb-4"><a href="#">POPULAR POSTS</a></li>
+            <li class=""><a href="#">SEARCH</a></li>
+          </ul>
+        </div>
+      </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
