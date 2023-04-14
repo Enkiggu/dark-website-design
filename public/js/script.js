@@ -7,3 +7,5 @@ dropDown.addEventListener('click', () => {
 
 
 ScrollReveal().reveal('.ani1', { delay: 500 });
+ScrollReveal().reveal('.ani2', { delay: 750 });
+ScrollReveal().reveal('.ani3', { delay: 1000 });
